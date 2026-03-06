@@ -29,7 +29,7 @@ This guide explains how to create a **Virtual Machine (VM)** in **Microsoft Azur
     
 3. Sign in with your Microsoft account
 
-![vm.png](attachment:64539da0-7ceb-486a-bff6-29853750c125:vm.png)
+![vm.png](images/vm.png)
 
 ---
 
@@ -39,7 +39,7 @@ This guide explains how to create a **Virtual Machine (VM)** in **Microsoft Azur
 2. Select **Virtual Machine**
 3. Click **Create**
 
-![vm2.png](attachment:29792ad8-0351-4e05-821d-6fbaf43ff459:vm2.png)
+![vm2.png](images/vm2.png)
 
 ---
 
@@ -54,7 +54,7 @@ Under the **Basics** tab, fill in the following:
     - Click **Create new** or select an existing resource group
     - Example: `website-rg`
     
-    ![vm3.png](attachment:df0846a9-c10d-40c6-b067-472d9fa4396c:vm3.png)
+    ![vm3.png](images/vm3.png)
     
 
 ### Virtual Machine Details
@@ -109,7 +109,7 @@ This enables remote access to the VM.
 2. **OS Disk type:** Standard SSD (recommended)
 3. Click **Next**
 
-![vmn1.png](attachment:92ef5b68-35bb-465c-8162-5da1daa52f3e:vmn1.png)
+![vmn1.png](images/vmn1.png)
 
 ---
 
@@ -128,7 +128,7 @@ Ensure:
 
 Click **Next**
 
-![vmn2.png](attachment:5c1bad28-12aa-44a8-9e4e-3ee595862b4c:vmn2.png)
+![vmn2.png](images/vmn2.png)
 
 ---
 
@@ -140,11 +140,11 @@ You may:
 - Leave monitoring and backup as default
 - Click tag and type the name and the value(example owner, Personal name)
 
-![vmn4.png](attachment:66903f91-9308-4aee-a7fe-4c963b95b47a:vmn4.png)
+![vmn4.png](images/vmn4.png)
 
 Click **Next** until you reach **Review + Create**
 
-![vmn5.png](attachment:ee266888-a8d0-4d6a-a407-970da50342a3:vmn5.png)
+![vmn5.png](images/vmn5.png)
 
 ---
 
@@ -156,7 +156,7 @@ Click **Next** until you reach **Review + Create**
 
 Deployment will take a few minutes.
 
-![vmn7.png](attachment:6ce91bb2-c47f-4cf3-bf47-79e3fd302877:vmn7.png)
+![vmn7.png](images/vmn7.png)
 
 ---
 
@@ -169,7 +169,7 @@ Deployment will take a few minutes.
 
 ---
 
-![vmn8.png](attachment:61bde2ba-5953-4dbb-b0b4-6c8b3fcb6995:vmn8.png)
+![vmn8.png](images/vmn8.png)
 
 ## Step 11: Connect to the Virtual Machine
 
@@ -210,11 +210,11 @@ This IP will be used to connect and access the website.
 
 You are now connected to your Azure VM.
 
-![mx.png](attachment:90d319a3-375a-4db3-8fdc-75e52a0e4634:mx.png)
+![mx.png](images/mx.png)
 
-![mx5.png](attachment:55bce84d-7287-42e2-8a5f-97fd830fac22:mx5.png)
+![mx5.png](images/mx5.png)
 
-![mx6.png](attachment:6c2ff614-f06b-453b-9a10-ee769cd096e9:mx6.png)
+![mx6.png](images/mx6.png)
 
 ---
 
@@ -230,7 +230,7 @@ sudo apt upgrade -y
 
 This ensures the system packages are up to date.
 
-![mx7.png](attachment:a1d2d709-528c-43ec-a3c0-45735ec498e0:mx7.png)
+![mx7.png](images/mx7.png)
 
 ---
 
@@ -243,7 +243,7 @@ sudo apt install nginx -y
 
 ```
 
-![mxinstallnginx.png](attachment:45481dd4-2d12-45af-885f-5299bc7664a9:mxinstallnginx.png)
+![mxinstallnginx.png](images/mxinstallnginx.png)
 
 Start and enable NGINX:
 
@@ -260,7 +260,7 @@ sudo systemctl status nginx
 
 ```
 
-![mxn2.png](attachment:15772103-7ea9-4ed2-b071-6e75d9ebf8c4:mxn2.png)
+![mxn2.png](images/mxn2.png)
 
 ---
 
@@ -320,38 +320,38 @@ You should see your website displayed.
 - Select your zip folder for your website
 - Click upload butten
 
-![mxupload.png](attachment:9ae46707-f471-45d3-b60e-b9e880dcd5d8:mxupload.png)
+![mxupload.png](images/mxupload.png)
 
 - Unzip the the content by using the code `unzip folderName`
 - Move the content of the folder to the html folder
 
-![mxupload2.png](attachment:4710952c-ea5d-4f22-b47a-b0f95b942f44:mxupload2.png)
+![mxupload2.png](images/mxupload2.png)
 
 - Remove  the old file index.nginx-debian.html by typying the code `sudo rm filename`
 
-![mxremovefile.png](attachment:d54a7e93-f470-48e3-824a-0c06aa24a986:mxremovefile.png)
+![mxremovefile.png](images/mxremovefile.png)
 
 - Copy the public ip address and paste it on your url so that you can see the site.
 
-![mxwebsiteRunning.png](attachment:65e6d612-b9b2-4878-808e-b2bd6f2ec0f9:mxwebsiteRunning.png)
+![mxwebsiteRunning.png](images/mxwebsiteRunning.png)
 
 ## Step 18: Linking To Domain Name Using DNS
 
 - Login to your domain name Service provider
 
-![DNS.png](attachment:0fea9564-8fc7-4d28-8cdc-55f1073a53f1:DNS.png)
+![DNS.png](images/DNS.png)
 
 - Open the domain name you want to work on
 - Go to the DNS section of your domain name manager
 
-![dns2.png](attachment:4e69403d-20c5-4a4a-92d6-648744412e44:dns2.png)
+![dns2.png](images/dns2.png)
 
 - Create a “A record” add the public ip address and save
 
-![dns4.png](attachment:1f799e69-6c8e-4d9a-9777-5fd61c14d119:dns4.png)
+![dns4.png](images/dns4.png)
 
 - Copy the domain name  and paste it on your url so that you can see the site.
 
-![dnswebsite.png](attachment:764b625e-17bb-4902-bf58-647c1cc33af1:dnswebsite.png)
+![dnswebsite.png](images/dnswebsite.png)
 
 ---
